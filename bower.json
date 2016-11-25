@@ -1,0 +1,17 @@
+{
+  "name": "myBlog",
+  "authors": [
+    "LucaslEliane <517197934@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
