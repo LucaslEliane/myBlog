@@ -1,3 +1,6 @@
+html {
+    font-size: 5px;
+}
 .content {
     header {
         height: 6rem;
@@ -20,10 +23,11 @@
                 border: 0;
                 height: 6rem;
                 width: 6rem;
-                background: white;
             }
         }
     }
+
+
     .main-title {
         h1,h2,hr {
             position: relative;
@@ -35,7 +39,71 @@
         }
         h2 {
             font-size: 3rem;
-            padding: 0 0 2rem 0;
+            padding: 0 0 2rem 40rem;
+        }
+        hr {
+            width: 50rem;
+        }
+    }
+
+    .introduction {
+        .split-intro {
+            height: 20rem;
+            width: 100%;
+
+            .intro-img {
+                width: 30%;
+                
+            }
+            .intro-text {
+                width: 70%;
+
+            }
+        }
+    }
+
+    .describe {
+        &>div {
+            margin: 2%;
+            padding: 2%;
+            height: 23rem;
+
+            h3,p {
+                padding: 0.5rem;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .contact {
+        min-height: 50rem;
+        .transparent {
+            height: 30rem;
+        }
+        .information {
+            height: 20rem;
+
+            h3 {
+                padding-top: 5rem;
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    footer {
+        height: 5rem;
+        p {
+            font-size: 2rem;
+            padding-top: 1rem;
+            text-align: center;
+            margin: 0;
+
         }
     }
 }

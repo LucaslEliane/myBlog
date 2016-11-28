@@ -1,12 +1,108 @@
+html {
+    font-size: 4px;
+}
 .content {
-    .item {
-        .arrow {
-            top: 20rem;
+    header {
+        height: 6rem;
+
+
+        nav {
+            .logo {
+                height: 6rem;
+
+                p {
+                    line-height: 6rem;
+                    padding-left: 5rem;
+                }
+            }
+            ul {
+                display: none;
+            }
+            button {
+                float: right;
+                border: 0;
+                height: 6rem;
+                width: 6rem;
+            }
         }
     }
+
     .main-title {
         h1,h2,hr {
-            top: 10rem;
+            position: relative;
+            top: 25rem;
+        }
+        h1 {
+            font-size: 5rem;
+            padding: 2rem 0;
+        }
+        h2 {
+            font-size: 3rem;
+            padding: 0 0 2rem 40rem;
+        }
+        hr {
+            width: 50rem;
+        }
+    }
+
+    .introduction {
+        .split-intro {
+            height: 20rem;
+            width: 100%;
+
+            .intro-img {
+                width: 30%;
+                
+            }
+            .intro-text {
+                width: 70%;
+
+            }
+        }
+    }
+
+    .describe {
+        &>div {
+            margin: 2%;
+            padding: 2%;
+            height: 23rem;
+
+            h3,p {
+                padding: 0.5rem;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .contact {
+        min-height: 50rem;
+        .transparent {
+            height: 30rem;
+        }
+        .information {
+            height: 20rem;
+
+            h3 {
+                padding-top: 5rem;
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    footer {
+        height: 5rem;
+        p {
+            font-size: 2rem;
+            padding-top: 4rem;
+            text-align: center;
+            margin: 0;
+
         }
     }
 }

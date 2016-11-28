@@ -4,6 +4,28 @@
         clear: both;
     }
 }
+@keyframes arrow {
+    from {
+        margin-top: 0;
+        opacity: 1;
+    }
+    to {
+        margin-top: 5rem;
+        opacity: .7;
+    }
+}
+@keyframes linkHover {
+    from {
+        background: rgba(41, 52, 78, 0.9);
+    }
+    to {
+        background: rgba(37, 50, 78, 0.9);
+    }
+}
+@font-face {
+    font-family: 'PageIcon';
+    src: url('../icons/planet.svg') format('svg');
+}
 .intro-loop(@n, @i:1) when (@i <= @n) {
     .intro-@{i} {
         .intro-img {
@@ -21,15 +43,21 @@ h1,h2,h3,h4,h5,hr {
     margin-bottom: 0;
 }
 .content {
-    font-family: 'HoangYen11740548242168c8';
+    background: #444 url("../images/index-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'SourceSansPro-E7457a7b13168c8';
     //stylesheet of header
-    header {
+    header { 
+        z-index: 99;
         position: fixed;
         top: 0;
         left: 0;
         font-size: 2.5rem;
         font-family:'HoangYen11740548242168c8';
-        color: white;
+        color: #e2dddd;
 
         width: 100%;
         background: rgba(41, 52, 78, 0.9);
@@ -38,8 +66,13 @@ h1,h2,h3,h4,h5,hr {
             .logo {
                 float: left;
                 font-weight: bold;
+                background-image: url("../icons/planet.svg");
+                background-repeat: no-repeat;
+                background-size: auto 70%;
+                background-position: left center;
                 p {
                     margin: 0;
+
                 }
             }
 
@@ -50,9 +83,24 @@ h1,h2,h3,h4,h5,hr {
                     display: inline-block;
 
                     a {
+                        color: #e2dddd;
                         text-decoration: none;
+                        display: inline-block;
+                        transition: background 0.5s ease-in-out;
+
+                        &:hover {
+                            background: rgba(37, 50, 78, 1);
+                            transition: background 0.5s ease-in-out;
+                        }
                     }
                 }
+            }
+            button {
+                background: rgba(41, 52, 78, 0.9);
+                background-image: url('../icons/menu.svg');
+                background-size: 70% auto;
+                background-position: center center;
+                background-repeat: no-repeat;
             }
         }
     }
@@ -61,20 +109,25 @@ h1,h2,h3,h4,h5,hr {
     .item {
         width: 100%;
         min-height: 80rem;
-        background: black;
-
+        letter-spacing: 0.2rem;
         .arrow {
-            width: 4rem;
-            height: 4rem;
+            width: 6rem;
+            height: 6rem;
             margin: 0 auto;
-            background: white;
             position: relative;
-            top: 40rem;
+            top: 45rem;
+            cursor: pointer;
+            background-image: url("../icons/arrow-down.svg");
+            background-size: 100% auto;
+            background-position: center center;
+            animation: arrow 3s ease-in-out infinite alternate;
         }
     }
 
     //stylesheet of main title
     .main-title {
+        font-family:'HoangYen11740548242168c8';
+        background: rgba(0, 0, 0, 0.4);
         h1,h2 {
             text-align: center;
             color: white;
@@ -131,9 +184,66 @@ h1,h2,h3,h4,h5,hr {
 
     //stylesheet of describe item
     .describe {
-
+        background: #9890c3;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        &>div {
+            width: 25%;
+            overflow: hidden;
+            &:nth-child(odd) {
+                border-radius: 1rem;
+            }
+            &:nth-child(1) {
+                background: #8f87bb;
+            }
+            &:nth-child(3) {
+                background: #726aa2;
+            }
+            &:nth-child(5) {
+                background: #7c74ab;
+            }
+        }
     }
 
+    //stylesheet of contact item
+    .contact {
+        background: transparent;
+        .transparent {
+            background: transparent;
+        }
+        .information {
+            color: white;
+            background: #444d66;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    //stylesheet of footer
+    footer {
+        background: #333654;
+        p {
+            color: white;
+            margin: 0 auto;
+        }
+    }
+}
+
+.blog.content {
+    .item {
+        min-height: 30rem;
+    }
+    .passage {
+        background: rgba(0, 0, 0, 0.4);
+        article {
+            background: #f9f8f3;
+        }
+    }
 }
 
 @media screen and (min-width: 640px) {

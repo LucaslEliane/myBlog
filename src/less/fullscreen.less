@@ -5,11 +5,11 @@
 
         nav {
             .logo {
-                height: 6rem;
 
+                height: 6rem;
                 p {
+                    padding-left: 4rem;
                     line-height: 6rem;
-                    padding-left: 5rem;
                 }
             }
             ul {
@@ -17,7 +17,10 @@
                 height: 6rem;
                 li {
                     line-height: 6rem;
-                    padding-right: 1.5rem;
+                    a {
+                        padding: 0 1.5rem;
+                        line-height: inherit;
+                    }
                 }
             }
             button {
@@ -58,6 +61,82 @@
                 width: 70%;
 
             }
+        }
+    }
+
+    .describe {
+        &>div {
+            margin: 2%;
+            padding: 2%;
+            height: 23rem;
+
+            h3,p {
+                padding: 0.5rem;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .contact {
+        min-height: 70rem;
+        .transparent {
+            height: 40rem;
+        }
+        .information {
+            height: 30rem;
+
+            h3 {
+                padding-top: 10rem;
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    footer {
+        height: 10rem;
+        p {
+            font-size: 2rem;
+            padding-top: 4rem;
+            text-align: center;
+            margin: 0;
+
+        }
+    }
+}
+
+
+.blog.content {
+    background-position: bottom;
+    .main-title {
+        h1,h2,hr {
+            position: relative;
+            top: 10rem;
+        }
+        h1 {
+            font-size: 4rem;
+            padding: 2rem 0;
+        }
+        h2 {
+            font-size: 2rem;
+            padding: 0 0 2rem 40rem;
+        }
+        hr {
+            width: 40%;
+        }
+    }
+    .passage {
+        width: 100%;
+        min-height: 100rem;
+        article {
+            width: 60%;
+            min-height: 90rem;
+            margin: 0 10% 0 30%;
         }
     }
 }
