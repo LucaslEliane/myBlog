@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./src/js/",
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": true
+    },
+    "files": [
+        "./src/js/parseMarkdown.ts"
+    ]
+}

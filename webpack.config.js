@@ -20,7 +20,7 @@ module.exports = {
         filename: 'bundle.js'
     },
 
-
+    devtool: "#source-map",
 
     devServer: {
         contentBase: './dist/',
@@ -31,6 +31,10 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.ts/,
+                loader: 'awesome-typescript-loader'
+            },
+            {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader',
@@ -40,7 +44,7 @@ module.exports = {
             },
             {
                 test: /\.jsx/,
-                loader: 'babel',
+                loader: 'babel-loader',
                 query: {
                     presets: [
                         'es2015',
@@ -50,7 +54,7 @@ module.exports = {
             },
             {
                 test: /\.less$/,
-                loader: 'style-loader!css-loader!postcss-loader!less-loader'
+                loader: 'style-loader!css-loader!postcss-loader!less-loader?sourceMap'
             },
             {
                 test: /\.css$/,
@@ -58,7 +62,7 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|svg)$/,
-                loader: 'url-loader'
+                loader: 'url-loader?limit=8192'
             }
         ]
     }
