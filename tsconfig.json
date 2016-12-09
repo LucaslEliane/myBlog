@@ -2,11 +2,13 @@
     "compilerOptions": {
         "outDir": "./src/js/",
         "module": "commonjs",
-        "target": "es5",
-        "noImplicitAny": true,
-        "sourceMap": true
+        "target": "es6",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "jsx": "react"
     },
     "files": [
-        "./src/js/parseMarkdown.ts"
+        "./src/js/index.tsx",
+        "./src/js/containers/Root.tsx"
     ]
 }

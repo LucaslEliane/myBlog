@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize';
 import '../less/main.less';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, hashHistory, IndexRoute, IndexRedirect } from 'react-router';
 import NavBar from './navBar.jsx';
 import Passage from './passage.jsx';
 import Comment from './comment.jsx';
@@ -26,7 +26,7 @@ class PassageDiv extends React.Component {
         return (
             <div className="passage">
                 <NavBar  refreshCurrentPassage={this.refreshCurrentPassage} />
-                <Passage currentPassage={this.state.currentPassage}/>
+                {this.props.children}
             </div>
         );
     }
@@ -34,13 +34,12 @@ class PassageDiv extends React.Component {
 
 ReactDOM.render(
     (
-        <Router history={hashHistory}>
-            <Route path="/" component={PassageDiv}>
-                <Route path="/passage/:name" component={Passage}>
-                
-                </Route> 
+        <Router path="/" history={hashHistory}>
+            <Route path="/blog/" component={PassageDiv}>
+                <IndexRedirect to="/blog/index"></IndexRedirect>      
+                <Route path="/blog/:name" component={Passage}></Route>
             </Route>
-        </Router>
+        </Router>    
     ),
     document.querySelector('.passage-content')
 );

@@ -6,7 +6,9 @@ class Comment extends React.Component {
         super (props);
     }
     render () {
-        return ;
+        return (
+            <div className="comment"></div>
+        );
     }
 }
 

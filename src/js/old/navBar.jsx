@@ -65,12 +65,12 @@ class NavUl extends React.Component {
                         }.bind(this);
                     }).bind(this)(value.passageName.toString())
                 }>
-                    <Link to={"/passage/"+value.passageName}>
+                    <Link to={"/blog/" + value.passageName}>
                         {value.passageName}({value.letterNum})&nbsp;author:{value.author}
                     </Link>
                 </li>
             } else {
-                liEle = <li className="next" key="dropdown" onClick={this.handleDropClick}>Next</li>
+                liEle = <li className="next" key="dropdown" onClick={this.handleDropClick}>next</li>
             }
             liArray.push(liEle);
         });

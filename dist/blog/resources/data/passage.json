@@ -1,5 +1,5 @@
 {
-"passages": [
+"listContent": [
     {
         "passageName": "React Native",
         "letterNum": 330,
@@ -11,7 +11,7 @@
         "author": "Eliane"
     },
     {
-        "passageName": "Vue.js",
+        "passageName": "Vue",
         "letterNum": 7000,
         "author": "Dexter"
     },
@@ -26,7 +26,7 @@
         "author": "Homour"
     },
     {
-        "passageName": "React.js",
+        "passageName": "React",
         "letterNum": 4000,
         "author": "Douglas"
     },    
@@ -41,7 +41,7 @@
         "author": "Eliane"
     },
     {
-        "passageName": "Vue.js",
+        "passageName": "Vue",
         "letterNum": 7000,
         "author": "Dexter"
     },
@@ -56,7 +56,7 @@
         "author": "Homour"
     },
     {
-        "passageName": "React.js",
+        "passageName": "React",
         "letterNum": 4000,
         "author": "Douglas"
     },
@@ -71,7 +71,7 @@
         "author": "Eliane"
     },
     {
-        "passageName": "Vue.js",
+        "passageName": "Vue",
         "letterNum": 7000,
         "author": "Dexter"
     },
@@ -86,7 +86,7 @@
         "author": "Homour"
     },
     {
-        "passageName": "React.js",
+        "passageName": "React",
         "letterNum": 4000,
         "author": "Douglas"
     },    
@@ -101,7 +101,7 @@
         "author": "Eliane"
     },
     {
-        "passageName": "Vue.js",
+        "passageName": "Vue",
         "letterNum": 7000,
         "author": "Dexter"
     },
@@ -116,7 +116,7 @@
         "author": "Homour"
     },
     {
-        "passageName": "React.js",
+        "passageName": "React",
         "letterNum": 4000,
         "author": "Douglas"
     }

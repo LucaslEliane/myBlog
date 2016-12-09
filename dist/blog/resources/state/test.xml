@@ -1,0 +1,34 @@
+<!-- 请求:Windows to Server -->
+<xml>
+    <root>
+        <username>
+            admin
+        </username>
+        <password>
+            password
+        </password>
+        <domain>
+            cos
+        </domain>
+    </root>
+</xml>
+
+<!-- 响应 -->
+<xml>
+    <root>
+        <result>
+            ok/error
+        </result>
+        <passport>
+            passport
+        </passport>
+    </root>
+</xml>
+
+<!-- 请求:Server to ldapServer -->
+<root>
+    <ldapip>XX</ldapip>
+    <port>389</port>
+    <username>uid=123,ou=people,dc=cac,dc=com</username>
+    <password>cac.123</password>
+</root>

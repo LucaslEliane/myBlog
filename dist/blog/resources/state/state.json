@@ -1,0 +1,60 @@
+{
+    "list": {
+        "listContent": [
+            {
+
+            }, {
+
+            }
+        ],
+        "listPage": 1,
+        "listIsFetching": false,
+        "lastPage": 1
+    },
+    "content": {
+        "passageName": "index",
+        "passageContent": {
+            "passageName": "Welcome",
+            "author": "",
+            "passageContent": ["welcome to my cute blog"]
+        },
+        "commentContent": [
+            {
+                "name": "lucas",
+                "comment": "This is a good blog",
+                "timestamp": "2015-01-01 01:00"
+            },
+            {
+                "name": "lucas",
+                "comment": "This is a good blog",
+                "timestamp": "2015-01-01 01:00"
+            },    {
+                "name": "lucas",
+                "comment": "This is a good blog",
+                "timestamp": "2015-01-01 01:00"
+            },    {
+                "name": "lucas",
+                "comment": "This is a good blog",
+                "timestamp": "2015-01-01 01:00"
+            },    {
+                "name": "lucas",
+                "comment": "This is a good blog",
+                "timestamp": "2015-01-01 01:00"
+            },    {
+                "name": "lucas",
+                "comment": "This is a good blog",
+                "timestamp": "2015-01-01 01:00"
+            },    {
+                "name": "lucas",
+                "comment": "This is a good blog",
+                "timestamp": "2015-01-01 01:00"
+            },    {
+                "name": "lucas",
+                "comment": "This is a good blog",
+                "timestamp": "2015-01-01 01:00"
+            }    
+        ],
+        "contentIsFetching": false,
+        "lastUpdate": 0
+    }
+}

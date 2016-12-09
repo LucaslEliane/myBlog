@@ -2,6 +2,8 @@
 
 var webpack = require('webpack');
 var path = require('path');
+var autoprefixer = require('autoprefixer')
+var stylelint = require('stylelint')
 
 module.exports = {
 
@@ -12,18 +14,19 @@ module.exports = {
     },
 
     entry: {
-        index : './src/js/index.jsx'
+        index : './src/js/blog/indexblog.jsx'
     },
 
     output: {
-        path: './dist/js',
+        path: './dist/blog/js',
         filename: 'bundle.js'
     },
 
     devtool: "#source-map",
 
     devServer: {
-        contentBase: './dist/',
+        contentBase: './dist/blog/',
+        historyApiFallback: true,
         hot: true,
         port: 8080
     },
@@ -33,6 +36,10 @@ module.exports = {
             {
                 test: /\.ts/,
                 loader: 'awesome-typescript-loader'
+            },
+            {
+                test: /\.tsx/,
+                loader: 'ts-loader'
             },
             {
                 test: /\.js$/,
@@ -64,6 +71,11 @@ module.exports = {
                 test: /\.(png|jpg|svg)$/,
                 loader: 'url-loader?limit=8192'
             }
+        ]
+    },
+    postcss: function() {
+        return [
+            autoprefixer ({ browsers: ['last 2 versions'] })
         ]
     }
 
